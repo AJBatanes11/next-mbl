@@ -70,8 +70,9 @@ export default function HeroHome() {
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
-              The website builder you're <br className="max-lg:hidden" />
-              looking for
+              {/* The website builder you're <br className="max-lg:hidden" />
+              looking for */}
+              Manila Bankers Life
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
@@ -79,8 +80,7 @@ export default function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                Simple is a modern website builder powered by AI that changes
-                how companies create user interfaces together.
+                The best way to show your love.
               </p>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]">
                 <div
@@ -89,7 +89,7 @@ export default function HeroHome() {
                   data-aos-delay={450}
                 >
                   <a
-                    className="btn group mb-4 w-full bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
+                    className="btn group mb-4 w-full bg-linear-to-t from-blue-900 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
                     href="#0"
                   >
                     <span className="relative inline-flex items-center">

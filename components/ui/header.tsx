@@ -9,16 +9,39 @@ export default function Header() {
           {/* Site branding */}
           <div className="flex flex-1 items-center">
             <Logo />
+            <Link
+              href="/"
+              className="ml-3 hidden text-sm font-medium text-gray-900 sm:block">
+                Manila Bankers Life
+            </Link>
           </div>
 
           {/* Desktop sign in links */}
           <ul className="flex flex-1 items-center justify-end gap-3">
             <li>
               <Link
-                href="/signin"
+                href="/"
                 className="btn-sm bg-white text-gray-800 shadow-sm hover:bg-gray-50"
               >
-                Login
+                Home
+              </Link>
+              <Link
+                href="/products"
+                className="btn-sm bg-white text-gray-800 shadow-sm hover:bg-gray-50"
+              >
+                Products
+              </Link>
+              <Link
+                href="/about"
+                className="btn-sm bg-white text-gray-800 shadow-sm hover:bg-gray-50"
+              >
+                About Us
+              </Link>
+              <Link
+                href="/contact"
+                className="btn-sm bg-white text-gray-800 shadow-sm hover:bg-gray-50"
+              >
+                Contact Us
               </Link>
             </li>
             <li>
@@ -26,7 +49,7 @@ export default function Header() {
                 href="/signup"
                 className="btn-sm bg-gray-800 text-gray-200 shadow-sm hover:bg-gray-900"
               >
-                Register
+                My MB Life
               </Link>
             </li>
           </ul>
