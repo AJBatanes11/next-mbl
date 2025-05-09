@@ -6,6 +6,7 @@ import Avatar03 from "@/public/images/avatar-03.jpg";
 import Avatar04 from "@/public/images/avatar-04.jpg";
 import Avatar05 from "@/public/images/avatar-05.jpg";
 import Avatar06 from "@/public/images/avatar-06.jpg";
+import CustomButton from "./reusable/snippets/custom-button";
 
 export default function HeroHome() {
   return (
@@ -88,7 +89,7 @@ export default function HeroHome() {
                   data-aos="zoom-y-out"
                   data-aos-delay={450}
                 >
-                  <a
+                  {/* <a
                     className="btn group mb-4 w-full bg-linear-to-t from-blue-900 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
                     href="#0"
                   >
@@ -98,13 +99,9 @@ export default function HeroHome() {
                         -&gt;
                       </span>
                     </span>
-                  </a>
-                  <a
-                    className="btn w-full bg-white text-gray-800 shadow-sm hover:bg-gray-50 sm:ml-4 sm:w-auto"
-                    href="#0"
-                  >
-                    Learn More
-                  </a>
+                  </a> */}
+                  <CustomButton label="View Products" link="/products" />
+                  <CustomButton label="Learn More" link="/about" variant="secondary" />
                 </div>
               </div>
             </div>

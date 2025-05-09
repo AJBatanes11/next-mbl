@@ -17,31 +17,37 @@ export default function Header() {
           </div>
 
           {/* Desktop sign in links */}
-          <ul className="flex flex-1 items-center justify-end gap-3">
+          <ul className="flex flex-auto items-center justify-end gap-3">
             <li>
               <Link
                 href="/"
-                className="btn-sm bg-white text-gray-800 shadow-sm hover:bg-gray-50"
+                className="btn-sm shadow-none text-gray-800 hover:bg-gray-200"
               >
                 Home
               </Link>
               <Link
                 href="/products"
-                className="btn-sm bg-white text-gray-800 shadow-sm hover:bg-gray-50"
+                className="btn-sm shadow-none text-gray-800 hover:bg-gray-200"
               >
                 Products
               </Link>
               <Link
                 href="/about"
-                className="btn-sm bg-white text-gray-800 shadow-sm hover:bg-gray-50"
+                className="btn-sm shadow-none text-gray-800 hover:bg-gray-200"
               >
                 About Us
               </Link>
               <Link
                 href="/contact"
-                className="btn-sm bg-white text-gray-800 shadow-sm hover:bg-gray-50"
+                className="btn-sm shadow-none text-gray-800 hover:bg-gray-200"
               >
                 Contact Us
+              </Link>
+              <Link
+                href="/development"
+                className="btn-sm shadow-none text-gray-800 hover:bg-gray-200"
+              >
+                Development
               </Link>
             </li>
             <li>

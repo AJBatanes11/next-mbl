@@ -8,8 +8,8 @@ import PlaceholderImg from "@/public/images/Health and Wellness Banner.avif";
 export default function Home() {
   return (
     <>
-        <Hero image={PlaceholderImg} imageAlt="Placeholder Image" size="fullscreen" />
-        <RichText heading="Development Page" subheading="This is where I usually put and try components that are still under development" />
+        {/* <Hero image={PlaceholderImg} imageAlt="Placeholder Image" size="fullscreen" /> */}
+        <RichText sectionHeader heading="Development Page" subheading="This is where I usually put and try components that are still under development" />
         {/* <RichText subheading="Testing" />
         <PrimaryButton label="Button"/>
         <PrimaryButton label="Button" variant="secondary" />

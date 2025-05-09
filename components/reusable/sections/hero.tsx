@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image";
 import Image from "next/image";
 
 interface HeroProps {
-  image?: StaticImageData;
+  image?: StaticImageData | string;
   imageAlt?: string;
   size?: "small" | "medium" | "large" | "fullscreen" | "natural";
   heading?: string;
@@ -42,36 +42,36 @@ export default function Hero({
   buttonLink,
   placement = "middle-center"
 }: HeroProps) {
-  const isNatural = size === "natural";
   const aspectRatio = image ? image.width / image.height : 1280 / 549; // fallback
 
   return (
     
     <div className={`relative w-full ${size === "natural" ? "h-auto" : sizeClass[size]}`}>
-{size === "natural" ? (
-  <div
-    className="relative w-full"
-    style={{ aspectRatio: `${aspectRatio}` }}
-  >
+
+    {size === "natural" ? (
+    <div
+        className="relative w-full"
+        style={{ aspectRatio: `${aspectRatio}` }}
+    >
+        <Image
+        src={image}
+        alt={imageAlt || "Hero image"}
+        fill
+        className="object-contain"
+        sizes="100vw"
+        priority
+        />
+    </div>
+    ) : (
     <Image
-      src={image}
-      alt={imageAlt || "Hero image"}
-      fill
-      className="object-contain"
-      sizes="100vw"
-      priority
+        src={image}
+        alt={imageAlt || "Hero image"}
+        fill
+        className="object-cover object-center"
+        sizes="100vw"
+        priority
     />
-  </div>
-) : (
-  <Image
-    src={image}
-    alt={imageAlt || "Hero image"}
-    fill
-    className="object-cover object-center"
-    sizes="100vw"
-    priority
-  />
-)}
+    )}
 
 
 
