@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Stripes from "@/public/images/stripes-dark.svg";
 import CustomButton from "./reusable/snippets/custom-button";
+import Container from "./reusable/snippets/container";
 
 export default function Cta() {
   return (
-    <section>
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <Container>
         <div
-          className="relative overflow-hidden rounded-2xl text-center shadow-xl before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:rounded-2xl before:bg-gray-900"
+          className="relative max-w-6xl mx-auto overflow-hidden rounded-2xl text-center shadow-xl before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:rounded-2xl before:bg-gray-900"
           data-aos="zoom-y-out"
         >
           {/* Glow */}
@@ -39,7 +39,6 @@ export default function Cta() {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </Container>
   );
 }

@@ -1,27 +1,36 @@
-import HeroHome from "@/components/hero-home";
+import Hero from "@/components/reusable/sections/hero";
 import RichText from "@/components/reusable/sections/rich-text";
-import PrimaryButton from "@/components/reusable/snippets/custom-button";
+import placeholderImage from "@/public/images/Health and Wellness Banner.avif";
 
 export default function Home() {
   return (
     <>
-      <HeroHome />
-      <RichText heading="About Us" subheading="Manila Bankers Life" />
-      <RichText heading="About Us" subheading="Manila Bankers Life" />
-      <RichText heading="About Us" subheading="Manila Bankers Life" />
-      
-      {/* <PrimaryButton label="Button" />
-      <PrimaryButton label="Small" size="small" />
-      <PrimaryButton label="With Link, Medium, Secondary" link="/" size="medium" variant="secondary" />
-      <PrimaryButton label="With Link, Large, Primary" link="/" size="large" variant="primary" />
-      <PrimaryButton label="With Link, Large, Primary, Disabled" link="/" size="large" variant="primary" disabled /> */}
-
-      <PrimaryButton label="Button"/>
-      <PrimaryButton label="Button" variant="secondary" />
-      <PrimaryButton label="Button" size="base"/>
-      <PrimaryButton label="Button" size="small" />
-      <PrimaryButton label="Button" size="medium" />
-      <PrimaryButton label="Button" size="large" variant="secondary"/>
+      <Hero
+        heading="About Us"
+        subheading="We are a team of passionate individuals dedicated to making a difference."
+        image={placeholderImage}
+        imageAlt="About Us"
+        size="large"
+        placement="middle-center" 
+        buttonLabel="Learn More"
+        buttonLink="/"
+      />
+      <RichText
+        heading="Our Mission"
+        subheading="To provide the best services to our customers."
+      />
+      <RichText
+        heading="Our Vision"
+        subheading="To be the leading provider in our industry."
+      />
+      <RichText
+        heading="Our Values"
+        subheading="Integrity, Excellence, and Innovation."
+      />
+      <RichText
+        heading="Our Team"
+        subheading="A diverse group of professionals with a shared goal."
+      />
     </>
   );
 }

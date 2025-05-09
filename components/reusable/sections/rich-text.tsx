@@ -1,12 +1,17 @@
 import Container from "../snippets/container";
+import CustomButton from "../snippets/custom-button";
 
 interface RichTextProps {
   heading?: string;
   subheading?: string;
   sectionHeader?: boolean;
+  buttonLabel?: string;
+  buttonLink?: string;
+  buttonVariant?: "primary" | "secondary";
+  buttonSize?: "small" | "base" | "medium" | "large";
 };
 
-export default function RichText({ heading, subheading, sectionHeader }: RichTextProps) {
+export default function RichText({ heading, subheading, sectionHeader, buttonLabel, buttonLink, buttonVariant = "primary", buttonSize = "base" }: RichTextProps) {
   return (
     <Container variant={sectionHeader ? "section-header" : "section"}>
       <div className="space-y-3 text-center">
@@ -18,6 +23,9 @@ export default function RichText({ heading, subheading, sectionHeader }: RichTex
             {subheading}  
           </span>
         </div>
+        {buttonLabel && (
+          <CustomButton label={buttonLabel} link={buttonLink} variant={buttonVariant} size={buttonSize} />
+        )}
       </div>
     </Container>
   );

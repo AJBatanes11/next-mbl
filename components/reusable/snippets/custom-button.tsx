@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 interface CustomButtonProps {
-  label: string;
+  label?: string;
   link?: string;
   onClick?: () => void;
   disabled?: boolean;
