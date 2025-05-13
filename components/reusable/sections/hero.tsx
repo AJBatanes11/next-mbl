@@ -54,6 +54,8 @@ export default function Hero({
         <div
           className={`relative w-full ${isNatural ? "" : "h-full"}`}
           style={isNatural ? { aspectRatio: "1280 / 549" } : undefined}
+            data-aos="zoom-y-out"
+            data-aos-delay={600}
         >
           <Image
             src={image}

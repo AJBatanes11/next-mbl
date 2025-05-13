@@ -7,7 +7,7 @@ interface RichTextProps {
   sectionHeader?: boolean;
   buttonLabel?: string;
   buttonLink?: string;
-  buttonVariant?: "primary" | "secondary";
+  buttonVariant?: "primary" | "secondary" | "tertiary";
   buttonSize?: "small" | "base" | "medium" | "large";
 };
 

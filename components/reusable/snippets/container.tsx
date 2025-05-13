@@ -11,9 +11,11 @@ export default function Container({ children, variant = "section" }: ContainerPr
     const sectionClass = "container mx-auto py-12 md:py-20";
 
   return (
-    <section className="relative">
+    <section className="relative" data-aos="zoom-y-out">
       <div className={variant === "section-header" ? sectionHeaderClass : sectionClass}>
-        {children}
+        <div className="px-4 py-12 md:px-12 md:py-20">
+          {children}
+        </div>
       </div>
     </section>
   );

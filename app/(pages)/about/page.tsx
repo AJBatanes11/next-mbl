@@ -22,6 +22,8 @@ export default function Home() {
       <RichText
         heading="Our Vision"
         subheading="To be the leading provider in our industry."
+        buttonLabel="Learn More"
+        buttonLink="/"
       />
       <RichText
         heading="Our Values"
@@ -30,6 +32,8 @@ export default function Home() {
       <RichText
         heading="Our Team"
         subheading="A diverse group of professionals with a shared goal."
+        buttonLabel="Button"
+        buttonVariant="tertiary"
       />
     </>
   );
